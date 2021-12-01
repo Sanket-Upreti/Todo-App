@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/plus.PNG" type="image/x-icon" />
+    <title>Todo App: Your Daily Reminder</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__appName">
+        Todo App
+        <sup>Your Daily Reminder</sup>
+      </div>
+      <div class="nav__currDate" id="nav__currDate"></div>
+    </nav>
+    <div class="section">
+      <section class="inProgress" id="inProgress">
+        <h2>ToDo in progress</h2>
+        <hr />
+        <div class="inProgress__listItems" id="inProgress__listItems__lists">
+          <ul id="inProgress__listItems__lists__ul"></ul>
+        </div>
+      </section>
+      <section class="listTodo">
+        <h2>Add Your ToDo</h2>
+        <div class="listTodo__inputFields">
+          <form>
+            <input
+              type="text"
+              class="inputEl"
+              id="inputEl"
+              placeholder="Enter Your TODO"
+              required
+            />
+            <button
+              type="submit"
+              class="listTodo__inputFields--active"
+              id="listTodo__inputFields--active"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="listTodo__inputFields--active--add"
+                id="listTodo__inputFields--active--add"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="completed">
+        <h2>Completed ToDo</h2>
+        <hr />
+        <div class="inProgress__listItems" id="inProgress__listItems__lists">
+          <ul id="inProgress__listItems__lists__ul--completed"></ul>
+        </div>
+      </section>
+      <section class="lastTask" id="lastTask">
+        <p>Your last Task:</p>
+        <span id="lastTask__span">Finished making this todo app</span>
+      </section>
+    </div>
+    <footer>
+      <div>&copy; Sanket Upreti</div>
+      <div id="currentYear"></div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
